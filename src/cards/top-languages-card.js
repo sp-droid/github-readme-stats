@@ -249,7 +249,7 @@ const createCompactLangNode = ({ lang, totalSize, hideProgress, index }) => {
     <g class="stagger" style="animation-delay: ${staggerDelay}ms">
       <circle cx="5" cy="6" r="5" fill="${color}" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        ${lang.name} ${hideProgress ? "" : percentage + "%"}
+        ${lang.name} ${hideProgress ? "" : percentage + "XX%"}
       </text>
     </g>
   `;
@@ -802,7 +802,7 @@ const renderTopLanguages = (topLangs, options = {}) => {
   }
 
   const card = new Card({
-    customTitle: "this is a test",
+    customTitle: custom_title,
     defaultTitle: i18n.t("langcard.title"),
     width,
     height,
