@@ -802,7 +802,7 @@ const renderTopLanguages = (topLangs, options = {}) => {
   }
 
   const card = new Card({
-    customTitle: custom_title,
+    customTitle: "this is a test",
     defaultTitle: i18n.t("langcard.title"),
     width,
     height,
